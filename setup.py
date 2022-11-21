@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Mycounterix setup.py.
+"""counterix setup.py.
 
-This file details modalities for packaging the Mycounterix application.
+This file details modalities for packaging the counterix application.
 """
 
 from setuptools import setup
@@ -10,26 +10,26 @@ with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
 
 setup(
-    name='Mycounterix',
-    egg='Mycounterix',
+    name='counterix',
+    egg='counterix',
     description='Generating count-based Distributional Semantic Models',
     author=' Alexandre Kabbach',
     author_email='akb@3azouz.net',
     long_description=long_description,
     long_description_content_type='text/markdown',
     version='1.2.2',
-    url='https://github.com/akb89/Mycounterix',
-    download_url='https://github.com/akb89/Mycounterix',
+    url='https://github.com/akb89/counterix',
+    download_url='https://github.com/akb89/counterix',
     license='MIT',
     keywords=['count-based', 'distributional semantics'],
     platforms=['any'],
-    packages=['Mycounterix', 'Mycounterix.logging', 'Mycounterix.exceptions',
-              'Mycounterix.utils', 'Mycounterix.core'],
-    package_data={'Mycounterix': ['logging/*.yml']},
+    packages=['counterix', 'counterix.logging', 'counterix.exceptions',
+              'counterix.utils', 'counterix.core'],
+    package_data={'counterix': ['logging/*.yml']},
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'Mycounterix = Mycounterix.main:main'
+            'counterix = counterix.main:main'
         ],
     },
     install_requires=['pyyaml>=4.2b1', 'scipy==1.5.1', 'embeddix==1.15.1'],
