@@ -11,6 +11,7 @@ with open('README.md', 'r', encoding='utf-8') as fh:
 
 setup(
     name='Mycounterix',
+    egg='Mycounterix',
     description='Generating count-based Distributional Semantic Models',
     author=' Alexandre Kabbach',
     author_email='akb@3azouz.net',
